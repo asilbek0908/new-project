@@ -1,0 +1,29 @@
+@mixin Item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@mixin for-phone-only {
+    @media screen and(max-width:375px){
+        @content;
+    }
+}
+
+@mixin for-tablet1-only {
+    @media screen and(max-width:670px){
+        @content;
+    }
+}
+
+@mixin for-tablet-only {
+    @media screen and(max-width:768px){
+        @content;
+    }
+}
+
+@mixin transition-ease {
+  transition: all 1s ease-in-out;
+}
+
