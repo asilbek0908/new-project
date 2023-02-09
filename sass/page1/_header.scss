@@ -1,24 +1,98 @@
+.header {
+    padding: 40px 0;
+}
 
 
+.header__head {
+    display: flex;
+    column-gap: 64px;
 
-// .header__info {
-// display: flex;
-// column-gap: 64px;
-// }
+    @include for-tablet1-only {
+        justify-content: space-between;
+        align-items: center
+    }
+}
 
-// .header__info-nav {
-//     @include Item();
-//     width: 100%;
-   
-// }
+.header__head-nav {
+    @include flexItems();
+    width: 100%;
+    position: relative;
 
-// .header__nav-items{
-//     @include Item();
-//     column-gap: 40px;
-// }
+    @include for-tablet1-only {
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: $bg-color;
+        height: 100vh;
+        max-width: 300px;
+        justify-content: center;
+        row-gap: 32px;
+        box-shadow: 10px 10px 25px 10px rgba(54, 83, 107, 0.25);
+        transform: translateX(200%);
+        @include transition-ease();
+    }
 
 
+}
 
+.header__nav-items {
+    @include flexItems();
+    column-gap: 40px;
+
+    @include for-tablet1-only {
+        flex-direction: column;
+        row-gap: 32px;
+    }
+}
+
+.header__nav-link {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: $primary-color;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+
+    @include for-tablet1-only {
+        color: $body-color;
+
+    }
+}
+
+.header__nav-link:hover {
+    color: $third-color;
+}
+
+
+.remove__button {
+    display: none;
+
+    @include for-tablet1-only {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.menu__btn {
+    display: none;
+
+    @include for-tablet1-only {
+        display: block;
+
+    }
+}
+
+.menu__input:checked~.header__head-nav {
+    transform: translateX(0);
+}
 
 
 

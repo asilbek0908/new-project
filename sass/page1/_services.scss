@@ -1,0 +1,125 @@
+// Services section
+
+.services{
+    padding-top: 100px;
+}
+
+.services__head{
+    @include flexItems();
+    @include for-tablet-only {
+        flex-direction: column-reverse;
+        row-gap: 48px;
+       
+    }
+}
+
+.services__head-info{
+    max-width: 445px;
+    @include for-tablet-only {
+       text-align: center;
+       max-width: 573px;
+       
+    }
+    @include for-phone-only {
+        
+        max-width: 328px;
+        
+     }
+
+}
+
+.services__info-title{
+    font-weight: 400;
+font-size: 48px;
+line-height: 56px;
+letter-spacing: -0.369231px;
+margin-bottom: 24px;
+color: $primary-color;
+}
+
+.services__info-desc {
+    font-weight: 400;
+font-size: 15px;
+line-height: 28px;
+color: $third-color;
+}
+
+.services__head-image img{
+   @include transition-ease();
+}
+
+.services__head-image:hover img{
+    transform: scale(1.1,1.1);
+ }
+
+ .circle-2{
+    position: absolute;
+width: 780px;
+height: 780px;
+left: 1050px;
+top: 1753px;
+z-index: -1;
+border-radius: 50%;
+background: #b4b5b6;
+ }
+
+
+//  services__head-info2
+
+.services__head-info2{
+    padding-top: 100px;
+}
+
+.services__info2-cards{
+    @include flexItems();
+    @include for-phone-only {
+       flex-direction: column;
+       row-gap: 48px;
+    }
+}
+
+.services__info2-card{
+    max-width: 350px;
+    @include for-tablet-only {
+        max-width: 210px;
+    }
+   
+}
+
+
+.services__card-image{
+    background-color: $primary-color;
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    padding: 33px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    @include transition-ease();
+}
+
+.services__card-image:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 10px 10px 25px 10px rgb(211, 221, 229);
+}
+
+.services__card-title{
+   
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+letter-spacing: -0.138462px;
+color: $primary-color;
+margin-bottom: 16px;
+}
+
+.services__card-desc{
+    font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+text-align: center;
+letter-spacing: -0.115385px;
+color:$third-color;
+
+}

@@ -1,0 +1,62 @@
+// Example section
+
+.example{
+    padding-top: 100px;
+}
+
+.example__head{
+    @include flexItems();
+    @include for-tablet-only {
+        flex-direction: column;
+        row-gap: 48px;
+    }
+
+    @include for-phone-only {
+        row-gap: 30px;
+     }
+}
+
+.example__head-image{
+    max-width: 445px;
+   max-height: 284px;
+}
+
+.example__head-image img{
+    width: 100%;
+    height: 100%;
+    @include transition-ease ();
+}
+
+.example__head-image:hover img{
+    transform: scale(1.1,1.1);
+}
+
+.example__head-info{
+    max-width: 445px;
+    @include for-tablet-only {
+       text-align: center;
+       max-width: 573px;
+    }
+
+    @include for-phone-only {
+        max-width: 328px;
+     }
+}
+
+.example__head-title{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: $primary-color;
+margin-bottom: 24px;
+}
+
+.example__head-desc{
+    font-weight: 400;
+font-size: 15px;
+line-height: 28px;
+color: $third-color;
+
+}
+
