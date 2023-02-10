@@ -29,7 +29,7 @@
 }
 
 @mixin for-phone-only {
-    @media screen and (max-width:378px) {
+    @media screen and (max-width:576px) {
         @content;
     }
 }

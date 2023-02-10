@@ -79,6 +79,7 @@ h1 {
   .header__head-nav {
     flex-direction: column;
     position: fixed;
+    z-index: 10;
     right: 0;
     top: 0;
     background-color: #1B262F;
@@ -176,7 +177,7 @@ input[type=checkbox] {
   letter-spacing: -0.369231px;
   color: #36536B;
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
   .contact__head-title {
     font-size: 32px;
     line-height: 36px;
@@ -187,7 +188,7 @@ input[type=checkbox] {
   width: 445px;
   position: relative;
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
   .contact__head-form {
     max-width: 327px;
   }
@@ -214,7 +215,7 @@ input[type=email]:hover {
   right: 0;
   padding: 16px 24px 13px 24px;
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
   .btn {
     width: 100%;
     top: 100px;
@@ -434,7 +435,7 @@ input[type=checkbox] {
     max-width: 573px;
   }
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
   .main__info-title {
     font-size: 32px;
     line-height: 36px;
@@ -474,7 +475,7 @@ input:hover {
   right: 0;
   padding: 16px 24px 13px 24px;
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
   .main__button {
     top: 60px;
     width: 100%;
@@ -487,7 +488,7 @@ input:hover {
   line-height: 18px;
   color: #6C8294;
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
   .main__info-desc {
     margin-top: 100px;
   }
@@ -525,7 +526,7 @@ input:hover {
     top: -363px;
   }
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
   .circle {
     left: -202px;
     top: -550px;
@@ -564,7 +565,7 @@ input:hover {
   color: #FBFCFE;
   margin-bottom: 24px;
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
   .clients__info-title {
     font-size: 32px;
     line-height: 36px;
@@ -581,7 +582,7 @@ input:hover {
   opacity: 0.7;
   margin-bottom: 32px;
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
   .clients__info-desc {
     max-width: 327px;
   }
@@ -620,7 +621,7 @@ input:hover {
          column-gap: 50px;
   }
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
   .clients__head-companies {
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 30px;
@@ -652,7 +653,7 @@ input:hover {
     row-gap: 48px;
   }
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
   .example__head {
     row-gap: 30px;
   }
@@ -682,7 +683,7 @@ input:hover {
     max-width: 573px;
   }
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
   .example__head-info {
     max-width: 328px;
   }
@@ -729,7 +730,7 @@ input:hover {
     max-width: 573px;
   }
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
   .services__head-info {
     max-width: 328px;
   }
@@ -779,7 +780,7 @@ input:hover {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
   .services__info2-cards {
     flex-direction: column;
     row-gap: 48px;
@@ -853,7 +854,7 @@ input:hover {
   letter-spacing: -0.369231px;
   color: #36536B;
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
   .contact__head-title {
     font-size: 32px;
     line-height: 36px;
@@ -864,7 +865,7 @@ input:hover {
   width: 445px;
   position: relative;
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
   .contact__head-form {
     max-width: 327px;
   }
@@ -891,7 +892,7 @@ input[type=email]:hover {
   right: 0;
   padding: 16px 24px 13px 24px;
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
   .btn {
     width: 100%;
     top: 100px;
@@ -996,7 +997,7 @@ input[type=email]:hover {
     text-align: center;
   }
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
   .forms__title {
     max-width: 327px;
     font-size: 32px;
@@ -1082,7 +1083,7 @@ textarea {
     margin-bottom: 40px;
   }
 }
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 576px) {
   .forms__info2-title {
     max-width: 327px;
   }

@@ -21,6 +21,7 @@
     @include for-tablet1-only {
         flex-direction: column;
         position: fixed;
+        z-index: 10;
         right: 0;
         top: 0;
         background-color: $bg-color;
