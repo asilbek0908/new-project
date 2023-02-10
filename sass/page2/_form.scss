@@ -69,6 +69,16 @@ textarea{
     border-bottom: 1px solid $primary-color;
 }
 
+// textarea::placeholder{
+//     font-weight: 400;
+// font-size: 15px;
+// line-height: 25px;
+// letter-spacing: -0.115385px;
+// color: $primary-color;
+// mix-blend-mode: normal;
+// opacity: 0.5;
+// }
+
 .forms__btn{
     display: block;
     font-weight: 700;
