@@ -4,6 +4,9 @@
     padding-top: 50px;
 }
 
+.head {
+    display: flex;
+}
 
 .forms__title{
     font-weight: 400;
@@ -69,20 +72,6 @@ textarea{
     border-bottom: 1px solid $primary-color;
 }
 
-// .box-3{
-//     display: block;
-// }
-
-// .square{
-//     display: inline-block;
-//     width: 24px;
-//     height: 24px;
-//     background-color: $primary-color;
-// }
-
-// .box-4:checked>.square{
-//     color: red;
-// }
 
 
 

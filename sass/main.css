@@ -8,6 +8,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 ul li {
   list-style: none;
 }
@@ -137,7 +141,7 @@ h1 {
   }
 }
 
-input[type=checkbox] {
+.menu__input[type=checkbox] {
   display: none;
 }
 
@@ -381,7 +385,7 @@ input[type=email]:hover {
   }
 }
 
-input[type=checkbox] {
+.menu__input[type=checkbox] {
   display: none;
 }
 
@@ -976,6 +980,10 @@ input[type=email]:hover {
 
 .forms {
   padding-top: 50px;
+}
+
+.head {
+  display: flex;
 }
 
 .forms__title {
