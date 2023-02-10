@@ -22,6 +22,12 @@
     }
 }
 
+@mixin for-tablet3-only {
+    @media screen and (max-width:600px) {
+        @content;
+    }
+}
+
 @mixin for-phone-only {
     @media screen and (max-width:378px) {
         @content;
